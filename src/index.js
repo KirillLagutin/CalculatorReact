@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
+import ClickCalc from './components/ClickCalc/ClickCalc';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-      <App />
+      <App/>
     </ChakraProvider>
   </React.StrictMode>
 );
