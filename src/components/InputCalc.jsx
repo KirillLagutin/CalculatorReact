@@ -26,7 +26,7 @@ function InputCalc () {
       <Text textAlign="center" fontSize="1.5em" fontWeight="bold" color="white" mb="20px">
           ВЫВОД РЕЗУЛЬТАТА
       </Text>
-      <Text textAlign="center" h="100px" lineHeight="86px" fontSize="2em" fontWeight="bold"
+      <Text textAlign="center" h="80px" lineHeight="80px" fontSize="2em" fontWeight="bold"
           textColor="tomato" borderRadius="10px" bg="gray.300" mb="50px">
           {result}
       </Text>
@@ -34,13 +34,13 @@ function InputCalc () {
       <Text textAlign="center" fontSize="1.5em" fontWeight="bold" color="white" mb="20px">
           ВВОД ДАННЫХ
       </Text>
-      <Input textAlign="center" h="100px" fontSize="2em" mb="50px"
+      <Input textAlign="center" h="80px" fontSize="2em" mb="70px"
           borderRadius="10px" bg="gray.300" color="blue.600"
           border="none" value={counts} type="text" 
           onChange={ (e) => {updateCount(e)} }/> 
 
-      <Button textAlign="center" w="100%" h="100px" fontSize="2em"
-          borderRadius="10px" bg="tomato" mb="10px" color="white"
+      <Button textAlign="center" w="100%" h="80px" fontSize="2em"
+          borderRadius="10px" bg="tomato" color="white"
           onClick={()=>{
               setCounts('')
           }}>
