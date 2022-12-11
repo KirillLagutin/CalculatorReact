@@ -10,7 +10,7 @@ function InputCalc () {
     const expressions = /[0-9]/
     const lastNumber = e.target.value[e.target.value.length - 2]
 
-    if (!expressions.test(lastNumber) && !expressions.test(e.nativeEvent.data) && e.nativeEvent.data != null) {
+    if (expressions.test(lastNumber) && expressions.test(e.nativeEvent.data) && e.nativeEvent.data != null) {
       setResult(eval(e.target.value))
     }
     setCounts(e.target.value)
